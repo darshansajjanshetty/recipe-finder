@@ -1,86 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+.container {
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-  width: 100%;
-  max-width: 400px;
-}
-
-.toggle-buttons {
+.container .toggle-buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
   gap: 10px;
+  margin-bottom: 15px;
 }
 
-.toggle-btn {
+.container .toggle-btn {
   padding: 8px 16px;
   border: none;
   background: #ffffff;
-  color: #333;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.3s;
 }
 
-.toggle-btn:hover {
-  background: #ddd;
+.container .toggle-btn:hover {
+  background: #e0e0e0;
 }
 
-.form-card {
+.container .form-card {
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  width: 320px;
   text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.form-title {
+.container .form-title {
   margin-bottom: 20px;
   color: #333;
 }
 
-.input-field {
+.container .input-field {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border-radius: 6px;
   border: 1px solid #ccc;
+  border-radius: 6px;
   outline: none;
   transition: 0.3s;
 }
 
-.input-field:focus {
+.container .input-field:focus {
   border-color: #667eea;
-  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
 }
 
-.submit-btn {
+.container .submit-btn {
   width: 100%;
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
+  background: #667eea;
+  color: #ffffff;
   border: none;
   border-radius: 6px;
-  background: #667eea;
-  color: white;
-  font-weight: bold;
   cursor: pointer;
+  font-weight: bold;
   transition: 0.3s;
 }
 
-.submit-btn:hover {
+.container .submit-btn:hover {
   background: #5a67d8;
 }
